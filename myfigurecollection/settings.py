@@ -40,12 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    #allauth
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    #apps
-    'users',
+
     'databases.apps.DatabasesConfig',
 ]
 SITE_ID = 1
@@ -66,7 +61,7 @@ ROOT_URLCONF = 'myfigurecollection.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -129,26 +124,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-# https://docs.djangoproject.com/en/2.2/ref/settings/#email-timeout
-#EMAIL_TIMEOUT = 5
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = DEFAULT_FROM_EMAIL = "hassanbaras5@gmail.com"
-EMAIL_HOST_PASSWORD = "Wondermay2795"
-EMAIL_SUBJECT_PREFIX = "Figures Collection"
 
-
-# All auth settings
-ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS =1
-ACCOUNT_EMAIL_VERIFICATION = "none"
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_LOGOUT_REDIRECT_URL ='/'
-LOGIN_REDIRECT_URL = "/"  # default to /accounts/profile 
-ACCOUNT_USERNAME_REQUIRED = False
-ACCOUNT_LOGOUT_ON_GET = True
-ACCOUNT_AUTHENTICATION_METHOD = 'email'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
