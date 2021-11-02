@@ -1,0 +1,1 @@
+web: gunicorn myfigurecollection.wsgi --log-file -

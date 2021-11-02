@@ -1,0 +1,44 @@
+ {% load static %}
+ <!DOCTYPE html>
+<html>
+
+<head>
+    {% include 'databases/head.html' %}
+</head>
+
+<body>
+
+    
+    {% include 'databases/navbar.html' %}
+
+    {% block content %}{% endblock content %}
+
+      <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+         <a href="{% url 'index' %}"><b>DineroHero<b></a>
+            </p>
+          </div>
+
+          {% comment %} <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div> {% endcomment %}
+        </div>
+        </div>
+    </footer>
+
+    <!-- JavaScripts placed at the end of the document so the pages load faster --> 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+	<script src=" {% static 'databases/main.js' %} "></script>
+
+</body>
+</html> 

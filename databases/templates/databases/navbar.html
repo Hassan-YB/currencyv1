@@ -1,0 +1,31 @@
+{% load static %}
+<nav class="container bg-white" >
+  <div class="row">
+    <div class="col-4 d-flex justify-content-end" style="align-items:center;">
+      <a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}"></a>
+    </div>
+    <div class="col-8 d-flex justify-content-center" >
+      <div class="topnav d-flex" id="myTopnav" style="align-items:center">
+        <a href="#feature" id="sec-1">Features</a>
+        <a href="#cases" id="sec-2">Use Cases</a>
+        <a href="#plans" id="sec-3">Plans</a>
+        <a href="#faq" id="sec-4">FAQs</a>
+        <div class="dropdown d-flex">
+          <button class="dropbtn d-flex" style="align-items:center"><a href="{% url 'about' %}">About</a>
+            <i class="fa fa-caret-down mt-3 active" style="color:black;align-items:center" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+          </button>
+          
+          {% comment %} <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div> {% endcomment %}
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <button class="color-green btn rounded-border mt-3" data-toggle="modal" data-target="#exampleModal" ><a href="#join" class="text-white mt-0 pt-0 pb-0">Join now</a></button>
+      </div>
+    </div>
+  </div>
+</nav>
