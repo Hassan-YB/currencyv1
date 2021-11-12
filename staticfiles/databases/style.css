@@ -1,20 +1,10 @@
 @font-face {
-  font-family: 'Linotte';
+  font-family: Linotte;
   src: url('/static/Linotte/Linotte-Regular.otf') format("opentype");
 }
-@font-face {
-  font-family: 'Linotte';
-  src: url('/static/Linotte/Linotte-Bold.otf') format("opentype");
-  font-weight: bold;
-}
-@font-face {
-  font-family: 'Linotte';
-  src: url('/static/Linotte/Linotte-Light.otf') format("opentype");
-  font-weight: lighter;
-}
+
 body{
-  font-family: 'Linotte' !important;
-  background-color: white !important;
+    background-color: white !important;
 }
 
 .container-fluid{
