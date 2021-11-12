@@ -4,19 +4,25 @@ $(document).ready(function(){
     var btn_swap = 0;
 
     $('#crowd').click(
-        function(){
-            $('#card-body2').show();
+        function(e){
+            $('#card-body2').fadeIn("slow");
             $('#crowd').addClass("current");
             $('#card-body').hide();
             $('#express').removeClass("current");
+
+            // Cancel the default action
+            e.preventDefault();
         });
 
     $('#express').click(
-      function(){
-          $('#card-body').show();
+      function(e){
+          $('#card-body').fadeIn("slow");
           $('#express').addClass("current");
           $('#card-body2').hide();
           $('#crowd').removeClass("current");
+
+          // Cancel the default action
+          e.preventDefault();
       });
       
     $('#express_r_country').on('change', function() {
@@ -240,7 +246,6 @@ $(document).ready(function(){
       $(window).scroll(function() { 
 
         if ($(window).scrollTop() >  $("#element").offset().top) {
-          $('#element').addClass('fade-in');
         };
         
     });
