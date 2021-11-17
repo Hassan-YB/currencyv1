@@ -16,11 +16,19 @@ body{
   font-family: 'Linotte' !important;
   background-color: white !important;
 }
-
-.container-fluid{
-    background-color: #f0f0f0;
-    padding-bottom: 50px;
-    min-height: 700px;
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: white;
+  max-width: inherit !important;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: inherit !important;
 }
 a{
     text-decoration: none !important;

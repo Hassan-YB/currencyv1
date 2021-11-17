@@ -158,38 +158,7 @@
                     <button class="btn btn-secondary rounded-border w-75" style="background-color:#32a432;color:white" data-toggle="modal" data-target="#exampleModal" type="button">Continue</button>
                 </form>
             </div>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered " role="document">
-                <div class="modal-content d-flex justify-content-center modal-border">
-                    <h5 class="modal-title current p-3" id="exampleModalLabel"  style="text-align:center">Stay in touch</h5>
-                    {% comment %} <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button> {% endcomment %}
-                <div class="modal-body">
-                    <div class="row">
-                        <p class="col-12">Thank you for your interest in DineroHero. The app is still in the works.</p>
-                        <p class="col-12">Leave your email below and we'll let you know once it's done</p>
-                        <div class="col-12 d-flex justify-content-center">
-                        <input type="text" class="form-control rounded-border col-6" placeholder="Enter your email here" >
-                        </div>
-                        <br>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                <div class="col-12 d-flex justify-content-center">
-                    <button class="btn btn-secondary rounded-border col-4" style="background-color:#32a432;color:white"  type="button" data-dismiss="modal">Submit</button><br>
-                    <div class="icon">
-                        <button type="button" class="button-close btn-cross" data-dismiss="modal" aria-label="Close">
-                    </div>
-                </button>
-                </div>
-                </div>
-                
-                </div>
-            </div>
-
-            </div>
+            
             <!-- --------   ----------        CROWD      ------------  -----------      -->
             <div class="card-body2 p-3" style="display:none" id="card-body2">
                 <form >
@@ -512,21 +481,5 @@
         </div>
     </div>
 </div>
-<script>
-function total(){
-        console.log("here");
-        var amount_to_send = $('#express_sender_amount').val();
-        $('#other-fee').text(" 0.5% ");
-        var total = amount_to_send + (amount_to_send * 0.5/100);
-        $('#total').text(total);
-      };
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-    }
-</script>
+
 {% endblock content %}
