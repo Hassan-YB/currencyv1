@@ -33,6 +33,10 @@ nav {
 a{
     text-decoration: none !important;
 }
+.plan-title{
+  color:#606060;
+  font-size: 12px;
+}
 .card{
     border: 2px solid #00cc66 !important;
     border-color: grey !important;
